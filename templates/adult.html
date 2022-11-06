@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>ADULT_CENSUS_INCOME_PREDICTION </title></head>
+    <body>
+        <form action="/predict" method="post" target="_blank">
+            <h3>ADULT_CENSUS_INCOME_PREDICTION</h3>
+            <label>age</label>  <input type="text" name="age"  required="required"/> <br/><br/>
+
+            <label>workclass</label> <input type="radio" name="workclass" value="Government" required="required"/> Government
+            <input type="radio" name="workclass" value="self employee" required="required"/> self employee
+            <input type="radio" name="workclass" value="Private" required="required"/> Private
+            <input type="radio" name="workclass" value="Without-pay" required="required"/> Without-pay
+            <br/><br/>
+
+            <label>education</label> <select name="education" required>
+                <option value="">--select eduction--</option>
+                <option value="Bachelors">Bachelors</option>
+                <option value="secondary">secondary</option>
+                <option value="Masters">Masters</option>
+                <option value="Associates">Associates</option>
+                <option value="middle">middle</option>
+                <option value="Doctorate">Doctorate</option>
+                <option value="Prof-school">Prof-school</option>
+                <option value="Preschool">Preschool</option>
+                <option value="primary">primary</option></select> <br/><br/>
+
+            <label>education_num</label>  <input type="text" name="education_num" placeholder="1-15" required="required"/> <br/><br/>
+
+            <label>marital_status</label> <input type="radio" name="marital_status" value="single" required="required"/> single
+            <input type="radio" name="marital_status" value="Married" required="required"/> Married
+            <input type="radio" name="marital_status" value="Divorced" required="required"/> Divorced
+            <input type="radio" name="marital_status" value="Widowed" required="required"/> Widowed
+            <br/><br/>
+
+            <label>occupation</label> <select name="occupation" required>
+                <option value="">--select occupation--</option>
+                <option value="Admin">Admin</option>
+                <option value="Manager">Manager</option>
+                <option value="Other occupation">Other occupation</option>
+                <option value="Professional">Professional</option>
+                <option value="Service">Service</option>
+                <option value="Sales">Sales</option>
+                <option value="Farmer">Farmer</option>
+                <option value="Technical">Technical</option>
+                <option value="Military">Military</option></select> <br/><br/>
+
+                <label>race</label> <input type="radio" name="race" value="White" required="required"/> White
+                <input type="radio" name="race" value="Black" required="required"/> Black
+                <input type="radio" name="race" value="Other" required="required"/> Other
+                <br/><br/>
+
+                <label>sex</label> <input type="radio" name="sex" value="Male" required="required"/> Male
+                <input type="radio" name="sex" value="Female" required="required"/> Female
+                <br/><br/>
+
+                <label>capital_gain</label> <input type="text" name="capital_gain" placeholder="0 or 1" required="reduired"/><br/><br/>
+
+                <label>capital_loss</label> <input type="text" name="capital_loss" placeholder="0 or 1" required="reduired"/><br/><br/>
+
+                <label>hours_per_week</label> <input type="text" name="hours_per_week"  required="reduired"/><br/><br/>
+
+                <label>country</label><select name="country" required>
+                    <option value="">--select country--</option>
+                    <option value="United-States">United-States</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="India">India</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Puerto-Rico">Puerto-Rico</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="England">England</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Columbia">Columbia</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Dominican-Republic">Dominican-Republic</option>
+                    <option value="El-Salvador">El-Salvador</option>
+                    <option value="France">France</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Italy">Italy</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Yugoslavia">Yugoslavia</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Scotland">Scotland</option>
+                    <option value="Trinadad&Tobago">Trinadad&Tobago</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Hong">Hong</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Holand-Netherlands">Holand-Netherlands</option>
+
+                </select><br/><br/>
+
+                <button type="submit" style="background-color:cornsilk;color:purple ;" class="btn btn-primary btn-block btn-large" >predict</button>
+
+
+
+        </form>
+    </body>
+</html>
