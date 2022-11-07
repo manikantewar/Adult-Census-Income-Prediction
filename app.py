@@ -30,7 +30,13 @@ def predict():
     final_input=(np.array(data).reshape(1,-1))
     print(final_input)
     output=model.predict(final_input)[0]
-    return render_template('predict.html',result="Adult income prediction is {} ".format(output))
+    res=""
+    if output==1:
+        res=" Adult Income Salary is greater than 50k"
+    else:
+        res="Adult Income Salary is lesser than 50k"
+
+    return render_template('predict.html',result="Prediction is {} so {} ".format(output,res))
 
 
 if __name__=='__main__':
